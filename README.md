@@ -1,24 +1,70 @@
-# README
+# Information_management_system
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+Basic information management, stores title and information you want to keep, you are able to Create, delete, update and read information on the page
 
-* Ruby version
+## Ruby Version
 
-* System dependencies
+```ruby
+ruby '3.1.2'
+```
 
-* Configuration
+## System Dependencies
+Rails version: 7.0.8
+sprockets-rails
+sassc-rails
+Database: SQLite3 (version 1.4)
+Puma (version 5.0)
+importmap-rails
+turbo-rails
+stimulus-rails
+jbuilder
+Devise (version 4.9.3)
+PaperTrail (version 15.1)
+Bootstrap (version 5.3.2)
+RSpec (version 3.12)
+tzinfo-data (for Windows compatibility)
+Bootsnap
 
-* Database creation
 
-* Database initialization
+## Database Creation
 
-* How to run the test suite
+```bash
+rails db:create
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Database Initialization
 
-* Deployment instructions
+```bash
+rails db:migrate
+```
 
-* ...
+## How to Run the Test Suite
+
+```bash
+bundle exec rspec
+```
+
+### Example Deployment Steps
+
+1. Clone the repository
+```bash
+git clone https://github.com/joshakingba/information_management_system.git
+```
+
+3. Install dependencies
+```bash
+bundle install
+```
+
+3. Set up the database
+```bash
+rails db:create
+rails db:migrate
+```
+4. start rails server
+
+```bash
+rails server
+```
